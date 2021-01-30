@@ -1,0 +1,54 @@
+table {
+  background-color:white;
+
+  width: 100%;
+  text-align: center;
+}
+
+table td {
+  position: relative;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: #2764ce;
+ 
+  
+}
+
+section {
+  background-color: white;
+}
+
+
+:host {
+  display: flex;
+  min-height: 90vh;
+  flex-direction: column;
+  padding: 10px;
+
+}
+header {
+  color: #ffffff;
+  padding: 10px;
+}
+header > h1 {
+  font-size: 2em;
+}
+section {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+section > app-session-item {
+  margin: 10px;
+}
+footer {
+  text-align: right;
+}
+footer .icon {
+  width: 64px;
+  height: 64px;
+  margin: 15px;
+}

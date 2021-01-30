@@ -1,0 +1,61 @@
+<header>
+  <h2>Modifier un formateur</h2>
+</header>
+<form
+  #formateurItemForm="ngForm"
+  (ngSubmit)="modifierformateur(formateurItemForm.value)"
+>
+  <ul>
+    <li>
+      <label for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        required
+        name="name"
+        [(ngModel)]="formateur.name"
+      />
+    </li>
+    <li>
+      <label for="lastname">lastname</label>
+      <input
+        type="text"
+        id="lastname"
+        required
+        name="lastname"
+        [(ngModel)]="formateur.lastname"
+      />
+    </li>
+    <li>
+      <label for="adress">adress</label>
+      <input
+        type="text"
+        id="adress"
+        required
+        name="adress"
+        [(ngModel)]="formateur.adress"
+      />
+    </li>
+    <li>
+      <label for="domaine">domaine</label>
+      <input
+        type="text"
+        id="domaine"
+        required
+        name="domaine"
+        [(ngModel)]="formateur.domaine"
+      />
+    </li>
+    <li>
+      <label for="email">email</label>
+      <input
+        type="email"
+        id="email"
+        required
+        name="email"
+        [(ngModel)]="formateur.email"
+      />
+    </li>
+  </ul>
+  <button type="submit">Enregistrer</button>
+</form>

@@ -1,0 +1,21 @@
+<section>
+  <a (click)="refresh()">
+    <img src="assets/actualiser.png" class="icon" style="margin-left: 10px;" />
+  </a>
+  <a routerLink="./addformateur" routerLinkActive="active">
+    <img src="assets/add.png" class="icon" />
+  </a>
+  <table>
+    <tr>
+      <td>Liste des formateurs</td>
+    </tr>
+
+    <app-formateur-item
+      *ngFor="let formateurItem of formateurItems"
+      [formateur]="formateurItem"
+      ><tr></tr>
+    </app-formateur-item>
+  </table>
+</section>
+
+<router-outlet></router-outlet>

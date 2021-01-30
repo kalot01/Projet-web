@@ -1,0 +1,24 @@
+<table class="table-formateur-element">
+    <tr>
+      <td>
+        {{ participant.lastname }}, {{ participant.name }} , {{ participant.adress }} ,
+        {{ participant.societe }},
+        {{ participant.poste }},
+        {{ participant.email }}
+      </td>
+      <td>
+        <a
+          [routerLink]="['../participant/edit', participant.id]"
+          routerLinkActive="active"
+        >
+          <img src="assets/edit.png" alt="modifier un participant" />
+        </a>
+      </td>
+      <td>
+        <a (click)="onDelete()">
+          <img src="assets/remove.png" alt="delete un particpant" />
+        </a>
+      </td>
+    </tr>
+  </table>
+  

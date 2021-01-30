@@ -1,0 +1,77 @@
+<div class="content-dash">
+  <div class="rectangle">
+    <a>
+      <img src="assets/dashbord3.png" alt="nombre de session" class="icon" />
+      {{ taille }} sessions
+    </a>
+  </div>
+
+  <div class="rectangle2">
+    <a>
+      <img
+        src="assets/dashbord2.png"
+        alt="nombre des participant "
+        class="icon"
+      />
+      {{ tailleParticipants }} participants
+    </a>
+  </div>
+
+  <div class="rectangle3">
+    <a>
+      <img
+        src="assets/dashbord2.png"
+        alt="nombre des formateurs "
+        class="icon"
+      />
+      {{ tailleFormateurs }} Formateurs
+    </a>
+  </div>
+</div>
+
+<div class="content-table">
+  <table class="formation">
+    <tr>
+      <td>Track</td>
+      <td>Nombre de sessions</td>
+    </tr>
+    <tr>
+      <td>MEAN</td>
+      <td>{{ nbresession[0] }}</td>
+    </tr>
+    <tr>
+      <td>Ionic</td>
+      <td>{{ nbresession[1] }}</td>
+    </tr>
+    <tr>
+      <td>NodeJS</td>
+      <td>{{ nbresession[2] }}</td>
+    </tr>
+    <tr>
+      <td>Angular</td>
+      <td>{{ nbresession[3] }}</td>
+    </tr>
+  </table>
+
+  <table class="formation">
+    <tr>
+      <td>Top Formateurs</td>
+    </tr>
+    <tr>
+      {{
+        formateurItems[1].name
+      }}
+      {{
+        formateurItems[1].lastname
+      }}
+    </tr>
+    <tr>
+      {{
+        formateurItems[0].name
+      }}
+      {{
+        formateurItems[0].lastname
+      }}
+    </tr>
+  </table>
+</div>

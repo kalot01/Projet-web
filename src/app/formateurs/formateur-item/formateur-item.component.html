@@ -1,0 +1,22 @@
+<table class="table-formateur-element">
+  <tr>
+    <td>
+      {{ formateur.lastname }}, {{ formateur.name }} , {{ formateur.adress }} ,
+      {{ formateur.domaine }},
+      {{ formateur.email }}
+    </td>
+    <td>
+      <a
+        [routerLink]="['../formateur/edit', formateur.id]"
+        routerLinkActive="active"
+      >
+        <img src="assets/edit.png" alt="modifier un formateur" />
+      </a>
+    </td>
+    <td>
+      <a (click)="onDelete()">
+        <img src="assets/remove.png" alt="delete un formateur" />
+      </a>
+    </td>
+  </tr>
+</table>

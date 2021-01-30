@@ -1,0 +1,105 @@
+:host {
+    display: block;
+    padding: 10px;
+   
+    border: 2px solid;
+    background-color: #29394b;
+    padding: 10px;
+    color: #bdc2c5;
+  }
+  ul {
+    list-style-type: none;
+  }
+  ul li {
+    margin: 10px 0;
+  }
+  header, label {
+    color: #53ace4;
+  }
+  input, select {
+    background-color: #29394b;
+    color: #c6c5c3;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset, 0 -1px 0 rgba(0,0,0,0.05) inset;
+    border-color: #53ace4;
+    padding: 6px;
+  }
+  .ng-invalid:not(.ng-pristine):not(.required-invalid) {
+    border: 1px solid #d93a3e;
+  }
+  input[required].ng-invalid {
+    border-right: 5px solid #d93a3e;
+  }
+  input[required]:not(.required-invalid),
+  input[required].ng-invalid:not(.required-invalid) {
+    border-right: 5px solid #37ad79;
+  }
+  .error {
+    color: #d93a3e;
+  }
+  #year {
+    width: 50px;
+  }
+  button[type=submit] {
+    background-color: #45bf94;
+    border: 0;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  button[type=submit]:disabled {
+    background-color: #333;
+    color: #666;
+    cursor: default;
+  }
+
+  :host {
+    display: flex;
+    min-height: 90vh;
+    flex-direction: column;
+    padding: 10px;
+  }
+  header {
+    color: #ffffff;
+    padding: 10px;
+  }
+  header > h1 {
+    font-size: 2em;
+  }
+  section {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+  }
+  section > app-session-item {
+    margin: 10px;
+  }
+  footer {
+    text-align: right;
+  }
+  footer .icon {
+    width: 64px;
+    height: 64px;
+    margin: 15px;
+  }
+  
+  h2 {
+    font-size: 1.6em;
+  }
+  :host.session-web {
+    border-color: #53ace4;
+  }
+  :host.session-web > h2 {
+    color: #53ace4;
+  }
+  :host.session-mobile {
+    border-color: #45bf94;
+  }
+  :host.session-mobile > h2 {
+    color: #45bf94;
+  }
+ 
